@@ -1,0 +1,27 @@
+{
+  "name": "02-bases",
+  "version": "1.0.0",
+  "description": "Esta es mi primera aplicacion real de Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "author": "Alan Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.3",
+    "get-age": "^1.0.1",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "nodemon": "^3.1.9",
+    "rimraf": "^5.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

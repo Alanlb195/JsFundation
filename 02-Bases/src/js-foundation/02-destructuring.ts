@@ -9,7 +9,7 @@
 // console.table({SHELL,HOMEBREW_PREFIX, npm_lifecycle_script});
 
 
-export const characters = ['flash', 'superman', 'Green Lantern', 'Batman'];
+export const characters = ['Flash', 'Superman', 'Green Lantern', 'Batman'];
 export const [,,batman] = characters;
 // console.log(batman);
 

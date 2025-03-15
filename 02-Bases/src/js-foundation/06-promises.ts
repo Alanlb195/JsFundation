@@ -1,6 +1,8 @@
 import { PokemonResponse } from "../interfaces/pokemon.interface";
 
-const { httpClient } = require('../plugins')
+// const { httpClient } = require('../plugins')
+
+import { httpClient } from "../plugins/http-client-adapter";
 
 export const getPokemonById = async (id: number | string): Promise<PokemonResponse> => {
 
@@ -19,18 +21,26 @@ export const getPokemonById = async (id: number | string): Promise<PokemonRespon
     //     .then(pokemon => pokemon.name)
 
 
-    // !modo async / await
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
 
     // !modo sin adapter:
     // const resp = await fetch(url);
     // throw new Error('Pokemon no existe');
     // const pokemon = await resp.json();
 
-    // !modo con adapter
-    const pokemon = await httpClient.get(url);
+    // !modo async / await
 
-    return pokemon;
+    try {
+        const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+
+        // !modo con adapter
+        const pokemon = await httpClient.get(url);
+
+        return pokemon.name;
+
+    } catch (error) {
+        throw (`Pokemon not found with id ${id}`);
+    }
+
 }
 
 // module.exports = {

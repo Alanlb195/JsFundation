@@ -78,11 +78,11 @@
 
 // !promises class
 // const { getPokemonById } = require('./js-foundation/06-promises');
-import { getPokemonById } from './js-foundation/06-promises';
+// import { getPokemonById } from './js-foundation/06-promises';
 
-getPokemonById(1).then((pokeResponse) => {
-    console.log(pokeResponse.name)
-});
+// getPokemonById(1).then((pokeResponse) => {
+//     console.log(pokeResponse.name)
+// });
 
 // // const name = getPokemonById(4, (pokemon => {
 // //     console.log({pokemon});
@@ -112,3 +112,20 @@ getPokemonById(1).then((pokeResponse) => {
 
 
 // !testing typescript
+
+// import { addOperation } from './js-foundation/02-addOperation';
+// // !block code and no block code
+
+
+// console.log('Hola, this is not a block code');
+// const response = addOperation(1,2, (err, result) => {
+    
+//     if (err) {
+//         console.error(err);
+//         return;
+//     }
+//     console.log(result);
+// })
+// console.log('Why this is not a block code? because I can continue with this instruction, even when the callback is not done yet.');
+
+

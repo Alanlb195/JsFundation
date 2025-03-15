@@ -10,10 +10,11 @@
 //     buildLogger,
 // }
 
-export { getAge } from "./get-age.pluggin";
-export { getUUID } from "./get-uuid.pluggin";
+export { getAge } from "./get-age.plugin";
+export { getUUID } from "./get-uuid.plugin";
 export { httpClient } from "./http-client-adapter";
-export { buildLogger } from "./logger.pluggin";
+export { buildLogger } from "./logger.plugin";
+export { logger } from "./logger.plugin";
 
 
 

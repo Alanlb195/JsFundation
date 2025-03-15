@@ -1,10 +1,10 @@
-import winston, { format } from 'winston';
-const { combine, timestamp, json } = format;
-
 // const winston = require('winston');
 // const { timestamp, combine, json } = winston.format;
 
-const logger = winston.createLogger({
+import winston, { format } from 'winston';
+const { combine, timestamp, json } = format;
+
+export const logger = winston.createLogger({
     level: 'info',
     format: combine(
         timestamp(),

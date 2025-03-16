@@ -5,6 +5,8 @@
 /03-Typescript/node_modules/
 /03-Typescript/dist
 
+/04-multiplication/node_modules/
+/04-multiplication/dist
 
 *.log
 

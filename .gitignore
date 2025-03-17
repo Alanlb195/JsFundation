@@ -9,6 +9,12 @@
 /04-multiplication/dist
 /04-multiplication/coverage
 
+/05-NOC/node_modules/
+/05-NOC/dist
+
+/06-Json-Server/node_modules/
+/06-Json-Server/dist
+
 *.log
 
 .DS_Store

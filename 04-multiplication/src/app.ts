@@ -1,18 +1,5 @@
-// import { TableOf } from "./TableOf";
-// TableOf(123);
-
 import { yarg } from "./config/plugins/args.plugin";
 import { ServerApp } from "./presentation/server-app";
-
-
-
-
-// console.log(yarg.b);
-
-
-// (() => {
-//     console.log('ejecutando')
-// })();
 
 
 (async () => {

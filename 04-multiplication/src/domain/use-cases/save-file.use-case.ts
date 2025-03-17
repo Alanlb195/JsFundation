@@ -31,8 +31,8 @@ export class SaveFile implements SaveFileUseCase {
             fs.mkdirSync(fileDestination, { recursive: true });
             fs.writeFileSync(`${fileDestination}/${fileName}.txt`, fileContent);
             return true;
-        } catch {
-            console.log('Error creating file');
+        } catch(error) {
+            // console.log(error); // TODO: use windton to manage log Errors
             return false;
         }
 

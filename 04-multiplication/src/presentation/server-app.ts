@@ -16,7 +16,7 @@ export class ServerApp {
 
 
     static run({ base, limit, showTable, name, destination }: RunOptions) {
-        console.log('server is running');
+        // console.log('server is running');
         const table = new CreateTable().execute({ base, limit });
         if (showTable) console.log(table);
 
@@ -27,10 +27,12 @@ export class ServerApp {
                 fileName: name
             });
 
+        // console.log({wasCreated});
+
 
         (wasCreated)
             ? console.log('File created')
-            : console.log('Error creating file');
+            : console.error('Error creating file');
 
     }
 

@@ -1,7 +1,5 @@
-import yargs from 'yargs'
+import yargs, { alias } from 'yargs'
 import { hideBin } from 'yargs/helpers'
-
-
 
 export const yarg = yargs(hideBin(process.argv))
     .option('b', {
@@ -10,7 +8,7 @@ export const yarg = yargs(hideBin(process.argv))
         demandOption: true,
         describe: 'Multiplication table base'
     })
-    .option('l',{
+    .option('l', {
         alias: 'limit',
         type: 'number',
         default: 10,

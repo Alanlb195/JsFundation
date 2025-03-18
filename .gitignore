@@ -10,7 +10,9 @@
 /04-multiplication/coverage
 
 /05-NOC/node_modules/
+/05-NOC/logs
 /05-NOC/dist
+/05-NOC/.env
 
 /06-Json-Server/node_modules/
 /06-Json-Server/dist

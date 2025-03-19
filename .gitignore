@@ -13,6 +13,9 @@
 /05-NOC/logs
 /05-NOC/dist
 /05-NOC/.env
+/05-NOC/mongo
+/05-NOC/postgres
+
 
 /06-Json-Server/node_modules/
 /06-Json-Server/dist

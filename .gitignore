@@ -14,7 +14,10 @@
 /05-NOC/dist
 /05-NOC/.env
 /05-NOC/mongo
+/05-NOC/mongo-test
 /05-NOC/postgres
+/05-NOC/postgres-test
+/05-NOC/coverage
 
 
 /06-Json-Server/node_modules/

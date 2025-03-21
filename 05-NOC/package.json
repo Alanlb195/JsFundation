@@ -6,15 +6,17 @@
     "dev": "tsnd --respawn --clear src/app.ts",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js",
-    "test": "jest",
-    "test:watch":"jest --watch",
-    "test:coverage": "jest --coverage"
+    "test": "npm run docker:test && jest",
+    "docker:test": "docker compose -f docker-compose.test.yml --env-file .env.test up -d",
+    "test:watch": "npm run docker:test && jest --watch",
+    "test:coverage": "npm run docker:test && jest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.26.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.10",
     "@types/nodemailer": "^6.4.17",
@@ -30,6 +32,8 @@
     "dotenv": "^16.4.7",
     "env-var": "^7.5.0",
     "mongoose": "^8.12.1",
-    "nodemailer": "^6.10.0"
+    "nodemailer": "^6.10.0",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2"
   }
 }

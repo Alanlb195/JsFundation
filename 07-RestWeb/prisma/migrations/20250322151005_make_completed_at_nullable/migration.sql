@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "todo" ALTER COLUMN "completedAt" DROP NOT NULL,
+ALTER COLUMN "completedAt" DROP DEFAULT,
+ALTER COLUMN "completedAt" SET DATA TYPE DATE;

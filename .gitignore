@@ -23,6 +23,11 @@
 /06-Json-Server/node_modules/
 /06-Json-Server/dist
 
+/07-RestWeb/node_modules
+/07-RestWeb/keys/*
+/07-RestWeb/dist
+/07-RestWeb/postgres
+
 *.log
 
 .DS_Store

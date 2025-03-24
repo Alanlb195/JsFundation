@@ -27,6 +27,8 @@
 /07-RestWeb/keys/*
 /07-RestWeb/dist
 /07-RestWeb/postgres
+/07-RestWeb/coverage
+
 
 *.log
 

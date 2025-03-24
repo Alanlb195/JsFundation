@@ -23,8 +23,11 @@ docker compose up -d
    ORM is used:
 
 ```
-npx prisma migrate dev --name init
+npx prisma migrate deploy
 ```
 
 4. To run the application, simply execute the following command inside the
    07-RestWeb directory: `npm run dev`
+
+5. To run tests, modify env.test. Tests were performed using Jest and Supertest. To run the tests and apply
+   migrations automatically, execute the following command: `npm run test:watch`

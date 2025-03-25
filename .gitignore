@@ -30,6 +30,10 @@
 /07-RestWeb/coverage
 
 
+/08-UserStore/node_modules
+/08-UserStore/mongo
+
+
 *.log
 
 .DS_Store

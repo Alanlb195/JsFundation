@@ -18,11 +18,11 @@ export class JwtAdapter {
         });
     }
 
-    static async validateToken(token: string) {
+    static async validateToken<T>(token: string): Promise<T | null> {
         return new Promise((resolve, reject) => {
             jwt.verify(token, JWT_SEED, (err, decoded) => {
                 if (err) return resolve(null);
-                resolve(decoded);
+                resolve(decoded as T);
             });
         });
     }

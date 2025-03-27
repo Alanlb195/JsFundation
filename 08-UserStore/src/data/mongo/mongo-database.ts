@@ -17,11 +17,13 @@ export class MongoDatabase {
                     dbName: dbName
                 }
             )
-            // console.log('Mongo connected.');
             return true;
         } catch (error) {
             console.log('Mongo connection error.')
             throw error;
         }
+    }
+    static async disconnect() {
+        await mongoose.disconnect();
     }
 }

@@ -38,6 +38,8 @@
 /10-serverless/node_modules
 *.log
 
+/11-websockets/node_modules
+
 .DS_Store
 # Local Netlify folder
 .netlify

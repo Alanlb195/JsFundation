@@ -12,7 +12,6 @@
 /05-NOC/node_modules/
 /05-NOC/logs
 /05-NOC/dist
-/05-NOC/.env
 /05-NOC/mongo
 /05-NOC/mongo-test
 /05-NOC/postgres
@@ -36,6 +35,10 @@
 /09-Github-webhooks/node_modules
 
 
+/10-serverless/node_modules
 *.log
 
 .DS_Store
+# Local Netlify folder
+.netlify
+.env

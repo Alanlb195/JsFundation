@@ -1,15 +1,11 @@
-/02-Bases/node_modules/
 /02-Bases/dist
 /02-Bases/coverage
 
-/03-Typescript/node_modules/
 /03-Typescript/dist
 
-/04-multiplication/node_modules/
 /04-multiplication/dist
 /04-multiplication/coverage
 
-/05-NOC/node_modules/
 /05-NOC/logs
 /05-NOC/dist
 /05-NOC/mongo
@@ -19,28 +15,19 @@
 /05-NOC/coverage
 
 
-/06-Json-Server/node_modules/
 /06-Json-Server/dist
 
-/07-RestWeb/node_modules
 /07-RestWeb/keys/*
 /07-RestWeb/dist
 /07-RestWeb/postgres
 /07-RestWeb/coverage
 
 
-/08-UserStore/node_modules
 /08-UserStore/mongo
 
-/09-Github-webhooks/node_modules
-
-
-/10-serverless/node_modules
-*.log
-
-/11-websockets/node_modules
-
 .DS_Store
+*.log
 # Local Netlify folder
 .netlify
 .env
+node_modules

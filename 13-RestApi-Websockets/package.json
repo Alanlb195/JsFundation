@@ -1,0 +1,29 @@
+{
+  "name": "13-restapi-websockets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.13.14",
+    "@types/ws": "^8.18.0",
+    "rimraf": "^5.0.10",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "env-var": "^7.5.0",
+    "express": "^4.21.2",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.1"
+  }
+}
